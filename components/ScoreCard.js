@@ -4,8 +4,8 @@ import { getUserId } from '../lib/userAuth'
 
 const CONFIRM_MESSAGE = 'Are you sure you want to delete the score?'
 
-const ScoreCard = ({ id, playedAt, totalScore, userId, userName, fetchUrls }) => {
-  const { deleteScore } = useScoreDelete(fetchUrls, id)
+const ScoreCard = ({ id, playedAt, totalScore, userId, userName, fetchUrl }) => {
+  const { deleteScore } = useScoreDelete(fetchUrl, id)
 
   return (
     <div className="flex flex-row p-3 my-4 shadow-md lg:w-1/3 md:w-1/2">

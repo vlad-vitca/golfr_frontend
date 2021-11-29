@@ -27,7 +27,7 @@ const GolferScores = () => {
                 playedAt={score.played_at}
                 userId={score.user_id}
                 userName={name}
-                fetchUrls={[USER_SCORES_URL(userid)]}
+                fetchUrl={USER_SCORES_URL(userid)}
               />
             ))}
           </>

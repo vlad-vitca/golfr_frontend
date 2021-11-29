@@ -23,7 +23,7 @@ const Home = () => {
                 playedAt={score.played_at}
                 userId={score.user_id}
                 userName={score.user_name}
-                fetchUrls={[FEED_URL]}
+                fetchUrl={FEED_URL}
               />
             ))}
           </>
