@@ -7,7 +7,7 @@ import { USER_SCORES_URL } from '../../lib/useUserScores'
 const GolferScores = () => {
   const router = useRouter()
   const { userid } = router.query
-  let { name, scores, error } = useUserScores(userid)
+  const { name, scores, error } = useUserScores(userid)
 
   if (error) {
     return <Layout> {error.info.errors} </Layout>
